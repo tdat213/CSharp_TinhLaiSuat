@@ -37,33 +37,34 @@
             label3 = new Label();
             label4 = new Label();
             lblTienLai = new Label();
-            btnThoat = new Button();
+            label1 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // txtTienGui
             // 
-            txtTienGui.Location = new Point(255, 59);
+            txtTienGui.Location = new Point(172, 54);
             txtTienGui.Name = "txtTienGui";
-            txtTienGui.Size = new Size(100, 23);
+            txtTienGui.Size = new Size(185, 23);
             txtTienGui.TabIndex = 0;
             // 
             // txtLaiSuat
             // 
-            txtLaiSuat.Location = new Point(255, 102);
+            txtLaiSuat.Location = new Point(172, 97);
             txtLaiSuat.Name = "txtLaiSuat";
-            txtLaiSuat.Size = new Size(100, 23);
+            txtLaiSuat.Size = new Size(185, 23);
             txtLaiSuat.TabIndex = 0;
             // 
             // txtSoNam
             // 
-            txtSoNam.Location = new Point(255, 154);
+            txtSoNam.Location = new Point(172, 143);
             txtSoNam.Name = "txtSoNam";
-            txtSoNam.Size = new Size(100, 23);
+            txtSoNam.Size = new Size(185, 23);
             txtSoNam.TabIndex = 0;
             // 
             // btnTinh
             // 
-            btnTinh.Location = new Point(70, 221);
+            btnTinh.Location = new Point(70, 229);
             btnTinh.Name = "btnTinh";
             btnTinh.Size = new Size(75, 23);
             btnTinh.TabIndex = 1;
@@ -74,11 +75,10 @@
             // lblKQ
             // 
             lblKQ.AutoSize = true;
-            lblKQ.Location = new Point(275, 211);
+            lblKQ.Location = new Point(272, 229);
             lblKQ.Name = "lblKQ";
-            lblKQ.Size = new Size(49, 15);
+            lblKQ.Size = new Size(0, 15);
             lblKQ.TabIndex = 2;
-            lblKQ.Text = "Ket Qua";
             // 
             // label2
             // 
@@ -101,7 +101,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(70, 157);
+            label4.Location = new Point(70, 151);
             label4.Name = "label4";
             label4.Size = new Size(49, 15);
             label4.TabIndex = 3;
@@ -110,30 +110,37 @@
             // lblTienLai
             // 
             lblTienLai.AutoSize = true;
-            lblTienLai.Location = new Point(472, 211);
+            lblTienLai.Location = new Point(261, 283);
             lblTienLai.Name = "lblTienLai";
-            lblTienLai.Size = new Size(47, 15);
+            lblTienLai.Size = new Size(0, 15);
             lblTienLai.TabIndex = 2;
-            lblTienLai.Text = "Tien Lai";
             // 
-            // btnThoat
+            // label1
             // 
-            btnThoat.BackColor = Color.Red;
-            btnThoat.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnThoat.Location = new Point(446, 0);
-            btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(26, 23);
-            btnThoat.TabIndex = 4;
-            btnThoat.Text = "x";
-            btnThoat.UseVisualStyleBackColor = false;
-            btnThoat.Click += button1_Click;
+            label1.AutoSize = true;
+            label1.Location = new Point(217, 229);
+            label1.Name = "label1";
+            label1.Size = new Size(55, 15);
+            label1.TabIndex = 4;
+            label1.Text = "Ket Qua :";
+            label1.Click += label1_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(217, 283);
+            label5.Name = "label5";
+            label5.Size = new Size(53, 15);
+            label5.TabIndex = 4;
+            label5.Text = "Tien Lai :";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(716, 486);
-            Controls.Add(btnThoat);
+            Controls.Add(label5);
+            Controls.Add(label1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -143,7 +150,7 @@
             Controls.Add(txtSoNam);
             Controls.Add(txtLaiSuat);
             Controls.Add(txtTienGui);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -162,6 +169,7 @@
         private Label label3;
         private Label label4;
         private Label lblTienLai;
-        private Button btnThoat;
+        private Label label1;
+        private Label label5;
     }
 }

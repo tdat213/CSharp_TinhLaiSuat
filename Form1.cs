@@ -12,7 +12,7 @@ namespace CSharp_TinhLaiSuat
             double tiengui = Convert.ToDouble(txtTienGui.Text);
             double laisuat = Convert.ToDouble(txtLaiSuat.Text) / 100;
             double sonam = Convert.ToDouble(txtSoNam.Text);
-            
+
 
             double tienlai = tiengui * laisuat * sonam;
             double tongsotien = tiengui + tienlai;
@@ -23,7 +23,13 @@ namespace CSharp_TinhLaiSuat
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
